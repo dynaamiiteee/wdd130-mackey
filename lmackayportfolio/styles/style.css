@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #2C3E50;
+    --secondary-color: #E74C3C;
+    --accent1-color: #F39C12;
+    --accent2-color: #ECF0F1;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #2C3E50;  /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: #2C3E50; /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: #2C3E50;
+    --nav-link-color: #2C3E50;
+    --nav-background-color: #F39C12;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #2C3E50;
+
+}
+
+* {
+    font-family: var(--paragraph-font);
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 16px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    background-color: #f0f0f0;
+    padding: 16px;
+}
+
+.hero img {
+    grid-column: 1 / 2;
+}
+.hero div{
+    grid-column: 2 / 3;
+}
+
+.about-me{
+    background-color: #f0f0f0;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font: -;
+}
+.about-me h1{
+    margin: 0 auto;
+}
+.about-me p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.three-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
