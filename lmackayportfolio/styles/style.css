@@ -104,7 +104,7 @@ main {
 .hero-text{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .hero-text h1{
     margin: 0;
