@@ -129,6 +129,12 @@ main {
     font-size: 1.25rem;
     font-weight: bold;
 }
+.hero-text a:hover {
+    background: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
 
 .about-me{
     background-color: #f0f0f0;
@@ -178,7 +184,9 @@ main {
 
 .read-more:hover {
     background: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color)
+    color: var(--nav-hover-link-color);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 footer {
